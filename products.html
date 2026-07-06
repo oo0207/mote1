@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品服务 | 莫特普迩新材料研究(上海)有限公司</title>
+  <meta name="description" content="莫特普迩核心产品：PC透水砖仿石增强剂、透水混凝土胶结料、砂基专用胶、覆膜砂及工程技术服务，为透水铺装工程提供全方位材料解决方案。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Product detail section styles */
+    .product-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 6rem;
+    }
+
+    .product-detail:last-child {
+      margin-bottom: 0;
+    }
+
+    .product-detail--reverse .product-detail__text {
+      order: 2;
+    }
+
+    .product-detail__image {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 5/4;
+    }
+
+    .product-detail__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .product-detail__image:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-detail__num {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--color-white);
+      background: rgba(13, 59, 22, 0.6);
+      backdrop-filter: blur(8px);
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+    }
+
+    .product-detail__name-en {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .product-detail__title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-detail__desc {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .product-detail__specs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .spec-item {
+      padding: 1rem;
+      background: var(--color-white);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .spec-item__label {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .spec-item__value {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    .product-detail__features {
+      margin-bottom: 1.5rem;
+    }
+
+    .product-detail__features li {
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9375rem;
+      color: var(--color-text-light);
+    }
+
+    .product-detail__features li i {
+      color: var(--color-accent);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+
+    .service-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .service-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .service-step__num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-step__icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-sm);
+      color: var(--color-accent);
+      font-size: 1.25rem;
+    }
+
+    .service-step__title {
+      font-size: 1.0625rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-step__desc {
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      .product-detail--reverse .product-detail__text {
+        order: 0;
+      }
+
+      .product-detail__specs {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.jpg" alt="莫特普迩">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">首页</a></li>
+        <li><a href="about.html" class="nav__link">关于我们</a></li>
+        <li><a href="products.html" class="nav__link">产品服务</a></li>
+        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="菜单">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Page Header ========== -->
+  <header class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="container">
+      <div class="page-header__content">
+        <div class="page-header__breadcrumb">
+          <a href="index.html">首页</a>
+          <span>/</span>
+          产品服务
+        </div>
+        <h1 class="page-header__title">产品与<em>服务</em></h1>
+        <p class="page-header__desc">
+          覆盖透水铺装全场景的核心材料产品体系，配合专业工程技术服务，为项目提供材料到施工的全链路解决方案。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== Product Detail 1: PC透水砖仿石增强剂 ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="product-detail fade-up">
+        <div class="product-detail__text">
+          <div class="product-detail__name-en">PC Permeable Brick Stone Enhancer</div>
+          <h2 class="product-detail__title">PC透水砖仿石增强剂</h2>
+          <p class="product-detail__desc">
+            专为PC透水砖研发的表面增强处理剂，通过渗透与结晶作用，显著提升透水砖表面的仿石质感、耐磨性能与抗冻融能力，使预制透水砖兼具天然石材的视觉效果与透水功能。
+          </p>
+
+          <div class="product-detail__specs">
+            <div class="spec-item">
+              <div class="spec-item__label">外观形态</div>
+              <div class="spec-item__value">液态/粉态</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">增强等级</div>
+              <div class="spec-item__value">高强级</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">仿石效果</div>
+              <div class="spec-item__value">花岗岩/砂岩</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">适用场景</div>
+              <div class="spec-item__value">预制块材生产</div>
+            </div>
+          </div>
+
+          <ul class="product-detail__features">
+            <li><i class="fas fa-check-circle"></i> 显著提升砖体表面硬度与耐磨性</li>
+            <li><i class="fas fa-check-circle"></i> 呈现天然石材纹理与质感</li>
+            <li><i class="fas fa-check-circle"></i> 优异的抗冻融与耐候性能</li>
+            <li><i class="fas fa-check-circle"></i> 不影响透水砖原有透水功能</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn--outline">
+            咨询详情 <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-detail__image">
+          <div class="product-detail__num">01</div>
+          <img src="https://images.unsplash.com/photo-1604079628040-9431bb279f9b?w=800&q=80" alt="PC透水砖仿石增强剂">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Product Detail 2: 透水混凝土胶结料 ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="product-detail product-detail--reverse fade-up">
+        <div class="product-detail__text">
+          <div class="product-detail__name-en">Permeable Concrete Binder</div>
+          <h2 class="product-detail__title">透水混凝土胶结料</h2>
+          <p class="product-detail__desc">
+            针对透水混凝土孔隙结构与力学性能矛盾研发的专用胶结材料，优化骨料间粘结强度，在保持高孔隙率的同时提升混凝土抗压强度与耐久性，适用于现浇透水路面工程。
+          </p>
+
+          <div class="product-detail__specs">
+            <div class="spec-item">
+              <div class="spec-item__label">透水系数</div>
+              <div class="spec-item__value">≥1.0 mm/s</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">抗压强度</div>
+              <div class="spec-item__value">C20-C40</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">孔隙率</div>
+              <div class="spec-item__value">15%-25%</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">适用场景</div>
+              <div class="spec-item__value">现浇透水路面</div>
+            </div>
+          </div>
+
+          <ul class="product-detail__features">
+            <li><i class="fas fa-check-circle"></i> 高透水率与高强度的平衡优化</li>
+            <li><i class="fas fa-check-circle"></i> 改善骨料包裹性与施工和易性</li>
+            <li><i class="fas fa-check-circle"></i> 增强路面抗冻融与抗冲刷性能</li>
+            <li><i class="fas fa-check-circle"></i> 可根据工程需求调整配方参数</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn--outline">
+            咨询详情 <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-detail__image">
+          <div class="product-detail__num">02</div>
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240c5?w=800&q=80" alt="透水混凝土胶结料">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Product Detail 3: 砂基专用胶 ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="product-detail fade-up">
+        <div class="product-detail__text">
+          <div class="product-detail__name-en">Sand-Based Special Adhesive</div>
+          <h2 class="product-detail__title">砂基专用胶</h2>
+          <p class="product-detail__desc">
+            专为砂基透水路面设计的高性能有机-无机复合粘结材料，通过独特的粘结机理将砂粒固化成具有透水功能的路面结构，兼具优异的透水性与承载力，适用于轻型车辆及人行道路面。
+          </p>
+
+          <div class="product-detail__specs">
+            <div class="spec-item">
+              <div class="spec-item__label">粘结强度</div>
+              <div class="spec-item__value">高强度</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">透水性能</div>
+              <div class="spec-item__value">优良</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">固化时间</div>
+              <div class="spec-item__value">可调控</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">适用场景</div>
+              <div class="spec-item__value">砂基透水路面</div>
+            </div>
+          </div>
+
+          <ul class="product-detail__features">
+            <li><i class="fas fa-check-circle"></i> 赋予砂基路面稳定的承载能力</li>
+            <li><i class="fas fa-check-circle"></i> 保持砂粒间孔隙实现高效透水</li>
+            <li><i class="fas fa-check-circle"></i> 良好的耐水性与抗老化性能</li>
+            <li><i class="fas fa-check-circle"></i> 施工简便，适用于多种路面场景</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn--outline">
+            咨询详情 <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-detail__image">
+          <div class="product-detail__num">03</div>
+          <img src="https://images.unsplash.com/photo-1503387762-3b858595ef67?w=800&q=80" alt="砂基专用胶">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Product Detail 4: 覆膜砂 ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="product-detail product-detail--reverse fade-up">
+        <div class="product-detail__text">
+          <div class="product-detail__name-en">Coated Sand</div>
+          <h2 class="product-detail__title">覆膜砂</h2>
+          <p class="product-detail__desc">
+            采用先进表面覆膜工艺对砂粒进行处理，在砂粒表面形成均匀的高强度覆膜层，显著提升砂粒间的结合力与抗磨耗性能。产品广泛应用于透水铺装砂基路面及精密工程领域。
+          </p>
+
+          <div class="product-detail__specs">
+            <div class="spec-item">
+              <div class="spec-item__label">覆膜均匀度</div>
+              <div class="spec-item__value">高均匀</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">抗磨耗性</div>
+              <div class="spec-item__value">优异</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">粒度规格</div>
+              <div class="spec-item__value">可定制</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__label">适用场景</div>
+              <div class="spec-item__value">砂基路面/工程</div>
+            </div>
+          </div>
+
+          <ul class="product-detail__features">
+            <li><i class="fas fa-check-circle"></i> 覆膜均匀，结合力显著增强</li>
+            <li><i class="fas fa-check-circle"></i> 抗磨耗性能大幅提升</li>
+            <li><i class="fas fa-check-circle"></i> 可根据需求定制粒度规格</li>
+            <li><i class="fas fa-check-circle"></i> 适用于高标准工程要求</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn--outline">
+            咨询详情 <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-detail__image">
+          <div class="product-detail__num">04</div>
+          <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9493?w=800&q=80" alt="覆膜砂">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Engineering Services ========== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
+        <div class="section-label">ENGINEERING SERVICES</div>
+        <h2 class="section-title" style="color: var(--color-white);">工程技术服务</h2>
+        <p class="section-desc" style="color: rgba(255,255,255,0.7);">
+          不仅提供优质材料，更提供从选型到验收的全流程技术支持，确保材料性能在工程中得到最优发挥。
+        </p>
+      </div>
+
+      <div class="service-steps fade-up">
+        <div class="service-step">
+          <div class="service-step__num">01</div>
+          <div class="service-step__icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3 class="service-step__title">需求分析</h3>
+          <p class="service-step__desc">深入了解工程项目需求，分析路面使用条件与性能要求。</p>
+        </div>
+        <div class="service-step">
+          <div class="service-step__num">02</div>
+          <div class="service-step__icon"><i class="fas fa-sliders"></i></div>
+          <h3 class="service-step__title">材料选型</h3>
+          <p class="service-step__desc">根据工程特点推荐适配材料产品与配方参数方案。</p>
+        </div>
+        <div class="service-step">
+          <div class="service-step__num">03</div>
+          <div class="service-step__icon"><i class="fas fa-helmet-safety"></i></div>
+          <h3 class="service-step__title">施工指导</h3>
+          <p class="service-step__desc">提供现场施工技术指导，确保材料正确使用与施工质量。</p>
+        </div>
+        <div class="service-step">
+          <div class="service-step__num">04</div>
+          <div class="service-step__icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3 class="service-step__title">质量验收</h3>
+          <p class="service-step__desc">协助完成路面质量检测与验收评估，确保工程达标。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="cta__bg"></div>
+    <div class="container">
+      <div class="cta__content fade-up">
+        <div class="cta__text">
+          <h2>需要专业的材料选型建议？</h2>
+          <p>联系我们的技术团队，获取针对您工程项目的定制化材料方案。</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--lg">
+          立即咨询 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span>莫特普迩新材料</span>
+          </div>
+          <p class="footer__about">
+            莫特普迩新材料研究(上海)有限公司，深耕建筑材料领域技术研发与落地应用，聚焦透水铺装领域核心材料，为海绵城市建设提供专业解决方案。
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">快速导航</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="products.html">产品服务</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">产品中心</h4>
+          <ul class="footer__links">
+            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">透水混凝土胶结料</a></li>
+            <li><a href="products.html">砂基专用胶</a></li>
+            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">工程技术服务</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">联系方式</h4>
+          <ul class="footer__links">
+            <li><a href="contact.html"><i class="fas fa-location-dot"></i> 上海市</a></li>
+            <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
+            <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">&copy; 2026 莫特普迩新材料研究(上海)有限公司 版权所有</span>
+        <span class="footer__icp">沪ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

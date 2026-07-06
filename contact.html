@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 | 莫特普迩新材料研究(上海)有限公司</title>
+  <meta name="description" content="联系莫特普迩新材料研究(上海)有限公司，获取透水铺装材料产品咨询与工程技术服务支持。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.jpg" alt="莫特普迩">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">首页</a></li>
+        <li><a href="about.html" class="nav__link">关于我们</a></li>
+        <li><a href="products.html" class="nav__link">产品服务</a></li>
+        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="菜单">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Page Header ========== -->
+  <header class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="container">
+      <div class="page-header__content">
+        <div class="page-header__breadcrumb">
+          <a href="index.html">首页</a>
+          <span>/</span>
+          联系我们
+        </div>
+        <h1 class="page-header__title">联系<em>莫特普迩</em></h1>
+        <p class="page-header__desc">
+          如您对我们的产品或服务有任何疑问，欢迎通过以下方式与我们联系，我们的专业团队将为您提供详尽的解答。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== Contact Section ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form fade-up">
+          <div class="section-label" style="margin-bottom: 1.5rem;">SEND MESSAGE</div>
+          <h2 style="margin-bottom: 0.5rem;">在线留言</h2>
+          <p style="margin-bottom: 2rem; font-size: 0.9375rem;">填写以下表单，我们将尽快与您取得联系。</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">姓名 *</label>
+                <input type="text" id="name" class="form-input" placeholder="请输入您的姓名" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">电话 *</label>
+                <input type="tel" id="phone" class="form-input" placeholder="请输入联系电话" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">邮箱</label>
+                <input type="email" id="email" class="form-input" placeholder="请输入电子邮箱">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="company">公司名称</label>
+                <input type="text" id="company" class="form-input" placeholder="请输入公司名称">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">咨询主题</label>
+              <select id="subject" class="form-select">
+                <option value="">请选择咨询主题</option>
+                <option value="product">产品咨询</option>
+                <option value="service">工程技术服务</option>
+                <option value="cooperation">商务合作</option>
+                <option value="other">其他事项</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">留言内容 *</label>
+              <textarea id="message" class="form-textarea" placeholder="请输入您需要咨询的内容..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> 提交留言
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-up">
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">公司地址</div>
+              <div class="contact-info__value">上海市<br>（详细地址请来电咨询）</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fas fa-phone-volume"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">联系电话</div>
+              <div class="contact-info__value">021-0000-0000</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">电子邮箱</div>
+              <div class="contact-info__value">info@motepuer.com</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">办公时间</div>
+              <div class="contact-info__value">周一至周五<br>09:00 - 18:00</div>
+            </div>
+          </div>
+
+          <!-- Quick Contact Cards -->
+          <div style="margin-top: 1rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+            <div style="font-size: 0.8125rem; color: var(--color-text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">QUICK CONTACT</div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="tel:021-00000000" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem 0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
+                <i class="fas fa-phone" style="font-size: 1.25rem; color: var(--color-accent);"></i>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">电话咨询</span>
+              </a>
+              <a href="mailto:info@motepuer.com" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem 0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
+                <i class="fas fa-envelope" style="font-size: 1.25rem; color: var(--color-accent);"></i>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">邮件咨询</span>
+              </a>
+              <a href="products.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem  0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
+                <i class="fas fa-box" style="font-size: 1.25rem; color: var(--color-accent);"></i>
+                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">产品中心</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Map Section ========== -->
+  <section class="section--tight section--alt">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;" class="fade-up">
+        <div class="section-label" style="justify-content: center;">OUR LOCATION</div>
+        <h2 style="margin-bottom: 0.75rem;">我们的位置</h2>
+        <p style="max-width: 500px; margin: 0 auto;">公司位于上海，欢迎来访交流洽谈。</p>
+      </div>
+
+      <div class="fade-up" style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md);">
+        <iframe
+          src="https://map.baidu.com/search/%E4%B8%8A%E6%B5%B7%E5%B8%82/@13523980.05,3641118.59,12z?querytype=s&da_src=shareurl&wd=%E4%B8%8A%E6%B5%B7%E5%B8%82&c=289&src=0&pn=0&sug=0&l=12&b=(13505980,3622118),(13541980,3660118)&from=webmap&prod=0&uc=0&anp=1&i=0&cc=289&cont_id=0&gwd=0&rg=0&pos=0&ln=0&rt=0&ext=0&auth=0&mrs=0&tn=B_NORMAL_MAP&re=1&nu=0&da_src=shareurl&t="
+          width="100%"
+          height="420"
+          style="border: 0; display: block;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="公司位置地图">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span>莫特普迩新材料</span>
+          </div>
+          <p class="footer__about">
+            莫特普迩新材料研究(上海)有限公司，深耕建筑材料领域技术研发与落地应用，聚焦透水铺装领域核心材料，为海绵城市建设提供专业解决方案。
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">快速导航</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="products.html">产品服务</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">产品中心</h4>
+          <ul class="footer__links">
+            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">透水混凝土胶结料</a></li>
+            <li><a href="products.html">砂基专用胶</a></li>
+            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">工程技术服务</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">联系方式</h4>
+          <ul class="footer__links">
+            <li><a href="contact.html"><i class="fas fa-location-dot"></i> 上海市</a></li>
+            <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
+            <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">&copy; 2026 莫特普迩新材料研究(上海)有限公司 版权所有</span>
+        <span class="footer__icp">沪ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
