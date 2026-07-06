@@ -21,7 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // ========== Mobile menu toggle ==========
   const toggle = document.querySelector('.nav__toggle');
   const navLinks = document.querySelector('.nav__links');
+  const navbarEl = document.querySelector('.navbar');
   if (toggle && navLinks) {
+    const closeMenu = () => {
+      navLinks.classList.remove('open');
+      const icon = toggle.querySelector('i');
+      if (icon) icon.className = 'fas fa-bars';
+    };
+
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       const icon = toggle.querySelector('i');
@@ -35,11 +42,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     navLinks.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        const icon = toggle.querySelector('i');
-        if (icon) icon.className = 'fas fa-bars';
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking outside navbar
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') && navbarEl && !navbarEl.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // Close menu on resize to desktop
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (window.innerWidth > 968) {
+          closeMenu();
+        }
+      }, 150);
     });
   }
 
@@ -99,12 +120,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const msg = document.createElement('div');
         msg.style.cssText = `
           position: fixed; top: 90px; left: 50%; transform: translateX(-50%);
-          background: #1A2735; color: #fff; padding: 1rem 2rem;
+          background: #0D3B16; color: #fff; padding: 1rem 2rem;
           border-radius: 8px; z-index: 9999; font-size: 0.9375rem;
           box-shadow: 0 8px 30px rgba(0,0,0,0.2); opacity: 0;
-          transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; max-width: calc(100% - 2rem); text-align: center;
         `;
-        msg.innerHTML = '<i class="fas fa-check-circle" style="color:#E89B5E;margin-right:0.5rem;"></i>感谢您的留言，我们将尽快与您联系！';
+        msg.innerHTML = '<i class="fas fa-check-circle" style="color:#7BB32D;margin-right:0.5rem;"></i>感谢您的留言，我们将尽快与您联系！';
         document.body.appendChild(msg);
 
         requestAnimationFrame(() => {
