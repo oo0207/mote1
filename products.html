@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>产品服务 | 莫特普迩新材料研究(上海)有限公司</title>
-  <meta name="description" content="莫特普迩核心产品：PC透水砖仿石增强剂、透水混凝土胶结料、砂基专用胶、覆膜砂及工程技术服务，为透水铺装工程提供全方位材料解决方案。">
+  <title>产品中心 | 莫特普迩新材料研究(上海)有限公司</title>
+  <meta name="description" content="莫特普迩核心产品：PC砖仿石系列增强剂、透水混凝土胶结料、砂基专用胶粘剂、彩色覆膜砂及工程技术服务，为透水铺装工程提供全方位材料解决方案。">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -205,13 +205,50 @@
   <nav class="navbar">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="assets/images/logo.jpg" alt="莫特普迩">
+        <img src="assets/images/logo.png" alt="莫特普迩" class="logo-default">
+        <img src="assets/images/logo-white.png" alt="莫特普迩" class="logo-white">
       </a>
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link">首页</a></li>
-        <li><a href="about.html" class="nav__link">关于我们</a></li>
-        <li><a href="products.html" class="nav__link">产品服务</a></li>
-        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">关于我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#company-intro" class="nav__dropdown-link">企业简介</a></li>
+            <li><a href="about.html#company-culture" class="nav__dropdown-link">企业文化</a></li>
+            <li><a href="about.html#company-honors" class="nav__dropdown-link">荣誉资质</a></li>
+            <li><a href="about.html#company-rd" class="nav__dropdown-link">研发实力</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link">产品中心 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="products.html#product-pc" class="nav__dropdown-link">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html#product-concrete" class="nav__dropdown-link">透水混凝土胶结料</a></li>
+            <li><a href="products.html#product-sand" class="nav__dropdown-link">砂基专用胶粘剂</a></li>
+            <li><a href="products.html#product-coated" class="nav__dropdown-link">彩色覆膜砂</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="cases.html" class="nav__link">客户案例 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="cases.html" class="nav__dropdown-link">透水混凝土路面案例</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">新闻资讯 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="news.html#news-company" class="nav__dropdown-link">公司新闻</a></li>
+            <li><a href="news.html#news-encyclopedia" class="nav__dropdown-link">产品百科</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">联系我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="contact.html#contact-info" class="nav__dropdown-link">公司信息</a></li>
+            <li><a href="contact.html#contact-sales" class="nav__dropdown-link">区域销售经理</a></li>
+            <li><a href="contact.html#contact-qr" class="nav__dropdown-link">关注我们</a></li>
+          </ul>
+        </li>
       </ul>
       <button class="nav__toggle" aria-label="菜单">
         <i class="fas fa-bars"></i>
@@ -227,9 +264,9 @@
         <div class="page-header__breadcrumb">
           <a href="index.html">首页</a>
           <span>/</span>
-          产品服务
+          产品中心
         </div>
-        <h1 class="page-header__title">产品与<em>服务</em></h1>
+        <h1 class="page-header__title">产品<em>中心</em></h1>
         <p class="page-header__desc">
           覆盖透水铺装全场景的核心材料产品体系，配合专业工程技术服务，为项目提供材料到施工的全链路解决方案。
         </p>
@@ -237,13 +274,23 @@
     </div>
   </header>
 
-  <!-- ========== Product Detail 1: PC透水砖仿石增强剂 ========== -->
-  <section class="section">
+  <!-- ========== Sub Navigation ========== -->
+  <div class="subnav">
+    <div class="subnav__inner">
+      <a href="#product-pc" class="subnav__link"><i class="fas fa-cubes"></i> PC砖仿石系列增强剂</a>
+      <a href="#product-concrete" class="subnav__link"><i class="fas fa-water"></i> 透水混凝土胶结料</a>
+      <a href="#product-sand" class="subnav__link"><i class="fas fa-droplet"></i> 砂基专用胶粘剂</a>
+      <a href="#product-coated" class="subnav__link"><i class="fas fa-gem"></i> 彩色覆膜砂</a>
+    </div>
+  </div>
+
+  <!-- ========== Product Detail 1: PC砖仿石系列增强剂 ========== -->
+  <section class="section" id="product-pc">
     <div class="container">
       <div class="product-detail fade-up">
         <div class="product-detail__text">
           <div class="product-detail__name-en">PC Permeable Brick Stone Enhancer</div>
-          <h2 class="product-detail__title">PC透水砖仿石增强剂</h2>
+          <h2 class="product-detail__title">PC砖仿石系列增强剂</h2>
           <p class="product-detail__desc">
             专为PC透水砖研发的表面增强处理剂，通过渗透与结晶作用，显著提升透水砖表面的仿石质感、耐磨性能与抗冻融能力，使预制透水砖兼具天然石材的视觉效果与透水功能。
           </p>
@@ -287,7 +334,7 @@
   </section>
 
   <!-- ========== Product Detail 2: 透水混凝土胶结料 ========== -->
-  <section class="section section--alt">
+  <section class="section section--alt" id="product-concrete">
     <div class="container">
       <div class="product-detail product-detail--reverse fade-up">
         <div class="product-detail__text">
@@ -335,13 +382,13 @@
     </div>
   </section>
 
-  <!-- ========== Product Detail 3: 砂基专用胶 ========== -->
-  <section class="section">
+  <!-- ========== Product Detail 3: 砂基专用胶粘剂 ========== -->
+  <section class="section" id="product-sand">
     <div class="container">
       <div class="product-detail fade-up">
         <div class="product-detail__text">
           <div class="product-detail__name-en">Sand-Based Special Adhesive</div>
-          <h2 class="product-detail__title">砂基专用胶</h2>
+          <h2 class="product-detail__title">砂基专用胶粘剂</h2>
           <p class="product-detail__desc">
             专为砂基透水路面设计的高性能有机-无机复合粘结材料，通过独特的粘结机理将砂粒固化成具有透水功能的路面结构，兼具优异的透水性与承载力，适用于轻型车辆及人行道路面。
           </p>
@@ -384,13 +431,13 @@
     </div>
   </section>
 
-  <!-- ========== Product Detail 4: 覆膜砂 ========== -->
-  <section class="section section--alt">
+  <!-- ========== Product Detail 4: 彩色覆膜砂 ========== -->
+  <section class="section section--alt" id="product-coated">
     <div class="container">
       <div class="product-detail product-detail--reverse fade-up">
         <div class="product-detail__text">
-          <div class="product-detail__name-en">Coated Sand</div>
-          <h2 class="product-detail__title">覆膜砂</h2>
+          <div class="product-detail__name-en">Color Coated Sand</div>
+          <h2 class="product-detail__title">彩色覆膜砂</h2>
           <p class="product-detail__desc">
             采用先进表面覆膜工艺对砂粒进行处理，在砂粒表面形成均匀的高强度覆膜层，显著提升砂粒间的结合力与抗磨耗性能。产品广泛应用于透水铺装砂基路面及精密工程领域。
           </p>
@@ -427,7 +474,7 @@
         </div>
         <div class="product-detail__image">
           <div class="product-detail__num">04</div>
-          <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9493?w=800&q=80" alt="覆膜砂">
+          <img src="assets/images/product04.jpg" alt="覆膜砂">
         </div>
       </div>
     </div>
@@ -507,16 +554,17 @@
             <li><a href="index.html">首页</a></li>
             <li><a href="about.html">关于我们</a></li>
             <li><a href="products.html">产品服务</a></li>
+            <li><a href="cases.html">客户案例</a></li>
             <li><a href="contact.html">联系我们</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer__col-title">产品中心</h4>
           <ul class="footer__links">
-            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">PC砖仿石系列增强剂</a></li>
             <li><a href="products.html">透水混凝土胶结料</a></li>
-            <li><a href="products.html">砂基专用胶</a></li>
-            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">砂基专用胶粘剂</a></li>
+            <li><a href="products.html">彩色覆膜砂</a></li>
             <li><a href="products.html">工程技术服务</a></li>
           </ul>
         </div>
@@ -527,6 +575,21 @@
             <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
             <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
           </ul>
+          <!-- 微信公众号二维码 -->
+          <div class="footer__qr" style="margin-top: 1.25rem;">
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-wechat.svg" alt="微信公众号">
+              </div>
+              <span class="footer__qr-text">微信公众号<br>扫码关注</span>
+            </div>
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-channel.svg" alt="微信视频号">
+              </div>
+              <span class="footer__qr-text">微信视频号<br>扫码关注</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">

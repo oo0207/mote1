@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>客户案例 | 莫特普迩新材料研究(上海)有限公司</title>
+  <meta name="description" content="莫特普迩透水混凝土路面客户工程案例：苏州工业园区、上海浦东新区、杭州钱江新城、成都天府新区、深圳前海、武汉光谷等海绵城市透水铺装项目。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Case grid section */
+    .cases-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .case-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .case-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(13, 59, 22, 0.12);
+      border-color: transparent;
+    }
+
+    .case-item__image {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .case-item__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .case-item:hover .case-item__image img {
+      transform: scale(1.08);
+    }
+
+    .case-item__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13, 59, 22, 0.5) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+
+    .case-item:hover .case-item__overlay {
+      opacity: 1;
+    }
+
+    .case-item__overlay-text {
+      color: var(--color-white);
+      font-size: 0.875rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .case-item__body {
+      padding: 1.5rem;
+    }
+
+    .case-item__location {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+
+    .case-item__location i {
+      color: var(--color-accent);
+      font-size: 0.75rem;
+    }
+
+    .case-item__title {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .case-item__tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--color-accent);
+      background: rgba(123, 179, 45, 0.08);
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 968px) {
+      .cases-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cases-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.png" alt="莫特普迩" class="logo-default">
+        <img src="assets/images/logo-white.png" alt="莫特普迩" class="logo-white">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">首页</a></li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">关于我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#company-intro" class="nav__dropdown-link">企业简介</a></li>
+            <li><a href="about.html#company-culture" class="nav__dropdown-link">企业文化</a></li>
+            <li><a href="about.html#company-honors" class="nav__dropdown-link">荣誉资质</a></li>
+            <li><a href="about.html#company-rd" class="nav__dropdown-link">研发实力</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link">产品中心 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="products.html#product-pc" class="nav__dropdown-link">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html#product-concrete" class="nav__dropdown-link">透水混凝土胶结料</a></li>
+            <li><a href="products.html#product-sand" class="nav__dropdown-link">砂基专用胶粘剂</a></li>
+            <li><a href="products.html#product-coated" class="nav__dropdown-link">彩色覆膜砂</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="cases.html" class="nav__link">客户案例 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="cases.html" class="nav__dropdown-link">透水混凝土路面案例</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">新闻资讯 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="news.html#news-company" class="nav__dropdown-link">公司新闻</a></li>
+            <li><a href="news.html#news-encyclopedia" class="nav__dropdown-link">产品百科</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">联系我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="contact.html#contact-info" class="nav__dropdown-link">公司信息</a></li>
+            <li><a href="contact.html#contact-sales" class="nav__dropdown-link">区域销售经理</a></li>
+            <li><a href="contact.html#contact-qr" class="nav__dropdown-link">关注我们</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="nav__toggle" aria-label="菜单">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Page Header ========== -->
+  <header class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="container">
+      <div class="page-header__content">
+        <div class="page-header__breadcrumb">
+          <a href="index.html">首页</a>
+          <span>/</span>
+          客户案例
+        </div>
+        <h1 class="page-header__title">客户<em>案例</em></h1>
+        <p class="page-header__desc">
+          产品已在多个城市的重点海绵城市建设项目中成功应用，覆盖市政道路、园林景观、产业园区等多种透水铺装场景。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== Case Grid ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cases-gallery">
+
+        <!-- Case 1 -->
+        <div class="case-item fade-up" id="case-suzhou">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=600&q=80" alt="苏州工业园区透水路面改造" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 苏州·工业园区</div>
+            <h3 class="case-item__title">工业园区道路透水路面改造</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="case-item fade-up" id="case-pudong">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1590874103328-8b378c27f675?w=600&q=80" alt="上海浦东新区生态道路工程" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 上海·浦东新区</div>
+            <h3 class="case-item__title">浦东新区生态道路工程</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="case-item fade-up" id="case-qianjiang">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="杭州钱江新城海绵道路" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 杭州·钱江新城</div>
+            <h3 class="case-item__title">钱江新城海绵道路工程</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="case-item fade-up" id="case-tianfu">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?w=600&q=80" alt="成都天府新区透水路面项目" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 成都·天府新区</div>
+            <h3 class="case-item__title">天府新区透水路面项目</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div class="case-item fade-up" id="case-qianhai">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80" alt="深圳前海海绵城市道路" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 深圳·前海</div>
+            <h3 class="case-item__title">前海海绵城市道路工程</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div class="case-item fade-up" id="case-opticsvalley">
+          <div class="case-item__image">
+            <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a20?w=600&q=80" alt="武汉光谷生态园区道路" loading="lazy">
+            <div class="case-item__overlay">
+              <span class="case-item__overlay-text"><i class="fas fa-search-plus"></i> 查看详情</span>
+            </div>
+          </div>
+          <div class="case-item__body">
+            <div class="case-item__location"><i class="fas fa-location-dot"></i> 武汉·光谷</div>
+            <h3 class="case-item__title">光谷生态园区道路工程</h3>
+            <span class="case-item__tag">透水混凝土胶结料</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="cta__bg"></div>
+    <div class="container">
+      <div class="cta__content fade-up">
+        <div class="cta__text">
+          <h2>成为下一个成功案例</h2>
+          <p>联系我们的技术团队，获取针对您工程项目的定制化材料选型方案与全程技术支持。</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--lg">
+          立即咨询 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span>莫特普迩新材料</span>
+          </div>
+          <p class="footer__about">
+            莫特普迩新材料研究(上海)有限公司，深耕建筑材料领域技术研发与落地应用，聚焦透水铺装领域核心材料，为海绵城市建设提供专业解决方案。
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">快速导航</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">客户案例</a></li>
+            <li><a href="news.html">新闻资讯</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">产品中心</h4>
+          <ul class="footer__links">
+            <li><a href="products.html">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html">透水混凝土胶结料</a></li>
+            <li><a href="products.html">砂基专用胶粘剂</a></li>
+            <li><a href="products.html">彩色覆膜砂</a></li>
+            <li><a href="products.html">工程技术服务</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">联系方式</h4>
+          <ul class="footer__links">
+            <li><a href="contact.html"><i class="fas fa-location-dot"></i> 上海市</a></li>
+            <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
+            <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
+          </ul>
+          <!-- 微信公众号二维码 -->
+          <div class="footer__qr" style="margin-top: 1.25rem;">
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-wechat.svg" alt="微信公众号">
+              </div>
+              <span class="footer__qr-text">微信公众号<br>扫码关注</span>
+            </div>
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-channel.svg" alt="微信视频号">
+              </div>
+              <span class="footer__qr-text">微信视频号<br>扫码关注</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">&copy; 2026 莫特普迩新材料研究(上海)有限公司 版权所有</span>
+        <span class="footer__icp">沪ICP备XXXXXXXX号</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

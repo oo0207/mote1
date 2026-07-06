@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>关于我们 | 莫特普迩新材料研究(上海)有限公司</title>
-  <meta name="description" content="莫特普迩新材料研究(上海)有限公司，深耕建筑材料领域技术研发与落地应用，聚焦透水铺装领域核心材料。了解我们的发展历程、企业文化与核心竞争力。">
+  <meta name="description" content="莫特普迩新材料研究(上海)有限公司，深耕建筑材料领域技术研发与落地应用，聚焦透水铺装领域核心材料。了解我们的研发实力、企业文化与核心竞争力。">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,50 @@
   <nav class="navbar">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="assets/images/logo.jpg" alt="莫特普迩">
+        <img src="assets/images/logo.png" alt="莫特普迩" class="logo-default">
+        <img src="assets/images/logo-white.png" alt="莫特普迩" class="logo-white">
       </a>
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link">首页</a></li>
-        <li><a href="about.html" class="nav__link">关于我们</a></li>
-        <li><a href="products.html" class="nav__link">产品服务</a></li>
-        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">关于我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#company-intro" class="nav__dropdown-link">企业简介</a></li>
+            <li><a href="about.html#company-culture" class="nav__dropdown-link">企业文化</a></li>
+            <li><a href="about.html#company-honors" class="nav__dropdown-link">荣誉资质</a></li>
+            <li><a href="about.html#company-rd" class="nav__dropdown-link">研发实力</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link">产品中心 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="products.html#product-pc" class="nav__dropdown-link">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html#product-concrete" class="nav__dropdown-link">透水混凝土胶结料</a></li>
+            <li><a href="products.html#product-sand" class="nav__dropdown-link">砂基专用胶粘剂</a></li>
+            <li><a href="products.html#product-coated" class="nav__dropdown-link">彩色覆膜砂</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="cases.html" class="nav__link">客户案例 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="cases.html" class="nav__dropdown-link">透水混凝土路面案例</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">新闻资讯 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="news.html#news-company" class="nav__dropdown-link">公司新闻</a></li>
+            <li><a href="news.html#news-encyclopedia" class="nav__dropdown-link">产品百科</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">联系我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="contact.html#contact-info" class="nav__dropdown-link">公司信息</a></li>
+            <li><a href="contact.html#contact-sales" class="nav__dropdown-link">区域销售经理</a></li>
+            <li><a href="contact.html#contact-qr" class="nav__dropdown-link">关注我们</a></li>
+          </ul>
+        </li>
       </ul>
       <button class="nav__toggle" aria-label="菜单">
         <i class="fas fa-bars"></i>
@@ -55,8 +92,18 @@
     </div>
   </header>
 
-  <!-- ========== Company Intro ========== -->
-  <section class="section">
+  <!-- ========== Sub Navigation ========== -->
+  <div class="subnav">
+    <div class="subnav__inner">
+      <a href="#company-intro" class="subnav__link"><i class="fas fa-building"></i> 企业简介</a>
+      <a href="#company-culture" class="subnav__link"><i class="fas fa-heart"></i> 企业文化</a>
+      <a href="#company-honors" class="subnav__link"><i class="fas fa-award"></i> 荣誉资质</a>
+      <a href="#company-rd" class="subnav__link"><i class="fas fa-flask"></i> 研发实力</a>
+    </div>
+  </div>
+
+  <!-- ========== 企业简介 ========== -->
+  <section class="section" id="company-intro">
     <div class="container">
       <div class="split">
         <div class="split__text fade-up">
@@ -97,8 +144,8 @@
     </div>
   </section>
 
-  <!-- ========== Mission / Vision / Values ========== -->
-  <section class="section section--alt">
+  <!-- ========== 企业文化 ========== -->
+  <section class="section section--alt" id="company-culture">
     <div class="container">
       <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
         <div class="section-label">CULTURE & VALUES</div>
@@ -143,56 +190,109 @@
     </div>
   </section>
 
-  <!-- ========== Development Timeline ========== -->
-  <section class="section">
+  <!-- ========== 荣誉资质 ========== -->
+  <section class="section section--dark" id="company-honors">
     <div class="container">
       <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
-        <div class="section-label">OUR JOURNEY</div>
-        <h2 class="section-title">发展历程</h2>
-        <p class="section-desc">
-          从材料研发起步，到产品体系完善，再到全国落地应用，每一步都坚实前行。
+        <div class="section-label">HONORS & QUALIFICATIONS</div>
+        <h2 class="section-title" style="color: var(--color-white);">荣誉资质</h2>
+        <p class="section-desc" style="color: rgba(255,255,255,0.7);">
+          以技术实力与产品品质赢得行业认可，持续积累核心知识产权。
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;" class="about-timeline-grid fade-up">
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2010</div>
-            <h3 class="timeline__title">材料研发起步</h3>
-            <p class="timeline__desc">核心团队开始聚焦透水铺装材料基础研究，探索透水混凝土胶结材料配方体系。</p>
+      <div class="honors-grid fade-up">
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-file-certificate"></i>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2014</div>
-            <h3 class="timeline__title">产品体系成型</h3>
-            <p class="timeline__desc">PC透水砖仿石增强剂、砂基专用胶等产品陆续研发成功，形成核心产品体系。</p>
+          <h3 class="honor-card__title" style="color: var(--color-white);">国家级高新技术企业</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">通过国家高新技术企业认定，持续创新能力获得权威认可。</p>
+        </div>
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-shield-check"></i>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2018</div>
-            <h3 class="timeline__title">公司正式成立</h3>
-            <p class="timeline__desc">莫特普迩新材料研究(上海)有限公司在上海正式注册成立，开启企业化运营。</p>
+          <h3 class="honor-card__title" style="color: var(--color-white);">ISO 9001质量管理体系认证</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">建立完善的质量管理体系，产品从研发到交付全程受控。</p>
+        </div>
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-patent"></i>
+          </div>
+          <h3 class="honor-card__title" style="color: var(--color-white);">20+项自主知识产权</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">已取得多项发明专利、实用新型专利及配方技术著作权。</p>
+        </div>
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-flask-vial"></i>
+          </div>
+          <h3 class="honor-card__title" style="color: var(--color-white);">上海市科技型中小企业</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">获评上海市科技型中小企业，彰显技术创新实力。</p>
+        </div>
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="honor-card__title" style="color: var(--color-white);">绿色建材产品认证</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">产品通过绿色建材评价认证，助力海绵城市与生态建设。</p>
+        </div>
+        <div class="honor-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+          <div class="honor-card__icon" style="background: rgba(123,179,45,0.15); color: var(--color-accent-light);">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="honor-card__title" style="color: var(--color-white);">行业优秀供应商</h3>
+          <p class="honor-card__desc" style="color: rgba(255,255,255,0.6);">多次荣获行业及客户颁发的优秀供应商与合作伙伴荣誉。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== R&D Strength ========== -->
+  <section class="section" id="company-rd">
+    <div class="container">
+      <div class="split">
+        <div class="split__text fade-up">
+          <div class="section-label">R&D STRENGTH</div>
+          <h2 class="section-title">研发实力</h2>
+          <p style="margin-bottom: 1.25rem;">
+            公司注重技术开发和应用，研发团队均由同济大学建材方向的博士、硕士组成，是一支学术水平高、经验丰富的研究团队。
+          </p>
+          <p style="margin-bottom: 1.25rem;">
+            充分利用自身优势，建立自有实验室，具有完备的科研管理体系，以及先进的科研、生产及测试设备。
+          </p>
+          <p style="margin-bottom: 2rem;">
+            目前已先后取得多项具有自主知识产权的核心技术与科研成果，持续为产品创新与性能提升提供坚实的技术支撑。
+          </p>
+          <div class="rd-highlights">
+            <div class="rd-highlight">
+              <div class="rd-highlight__icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <h4>顶尖学术背景</h4>
+                <p>同济大学建材方向博士、硕士组成的核心研发团队</p>
+              </div>
+            </div>
+            <div class="rd-highlight">
+              <div class="rd-highlight__icon"><i class="fas fa-flask"></i></div>
+              <div>
+                <h4>自有实验室</h4>
+                <p>配备先进的科研、生产及测试设备，具备完备的科研管理体系</p>
+              </div>
+            </div>
+            <div class="rd-highlight">
+              <div class="rd-highlight__icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <h4>自主知识产权</h4>
+                <p>多项核心技术与科研成果，构筑持续创新竞争力</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2020</div>
-            <h3 class="timeline__title">覆膜砂技术突破</h3>
-            <p class="timeline__desc">自主研发的覆膜砂工艺取得技术突破，产品抗磨耗性能大幅提升，应用于多项重点工程。</p>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2023</div>
-            <h3 class="timeline__title">全国市场拓展</h3>
-            <p class="timeline__desc">产品落地应用覆盖全国50+城市，服务超过100个工程项目，建立完善的技术服务体系。</p>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__year">2026</div>
-            <h3 class="timeline__title">持续创新前行</h3>
-            <p class="timeline__desc">加大研发投入，拓展产品应用场景，致力于成为透水铺装材料领域的技术引领者。</p>
+        <div class="split__image fade-up">
+          <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=800&q=80" alt="研发实验室">
+          <div class="split__image-badge">
+            <i class="fas fa-microscope"></i>
+            <span class="split__image-badge-text">技术驱动 · 创新引领</span>
           </div>
         </div>
       </div>
@@ -269,17 +369,19 @@
           <ul class="footer__links">
             <li><a href="index.html">首页</a></li>
             <li><a href="about.html">关于我们</a></li>
-            <li><a href="products.html">产品服务</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">客户案例</a></li>
+            <li><a href="news.html">新闻资讯</a></li>
             <li><a href="contact.html">联系我们</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer__col-title">产品中心</h4>
           <ul class="footer__links">
-            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">PC砖仿石系列增强剂</a></li>
             <li><a href="products.html">透水混凝土胶结料</a></li>
-            <li><a href="products.html">砂基专用胶</a></li>
-            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">砂基专用胶粘剂</a></li>
+            <li><a href="products.html">彩色覆膜砂</a></li>
             <li><a href="products.html">工程技术服务</a></li>
           </ul>
         </div>
@@ -290,6 +392,21 @@
             <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
             <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
           </ul>
+          <!-- 微信公众号二维码 -->
+          <div class="footer__qr" style="margin-top: 1.25rem;">
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-wechat.svg" alt="微信公众号">
+              </div>
+              <span class="footer__qr-text">微信公众号<br>扫码关注</span>
+            </div>
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-channel.svg" alt="微信视频号">
+              </div>
+              <span class="footer__qr-text">微信视频号<br>扫码关注</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">

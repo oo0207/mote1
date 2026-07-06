@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系我们 | 莫特普迩新材料研究(上海)有限公司</title>
-  <meta name="description" content="联系莫特普迩新材料研究(上海)有限公司，获取透水铺装材料产品咨询与工程技术服务支持。">
+  <meta name="description" content="联系莫特普迩新材料研究(上海)有限公司，获取各区域销售经理联系方式与产品技术支持。关注微信公众号及视频号了解更多。">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,50 @@
   <nav class="navbar">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="assets/images/logo.jpg" alt="莫特普迩">
+        <img src="assets/images/logo.png" alt="莫特普迩" class="logo-default">
+        <img src="assets/images/logo-white.png" alt="莫特普迩" class="logo-white">
       </a>
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link">首页</a></li>
-        <li><a href="about.html" class="nav__link">关于我们</a></li>
-        <li><a href="products.html" class="nav__link">产品服务</a></li>
-        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">关于我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#company-intro" class="nav__dropdown-link">企业简介</a></li>
+            <li><a href="about.html#company-culture" class="nav__dropdown-link">企业文化</a></li>
+            <li><a href="about.html#company-honors" class="nav__dropdown-link">荣誉资质</a></li>
+            <li><a href="about.html#company-rd" class="nav__dropdown-link">研发实力</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link">产品中心 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="products.html#product-pc" class="nav__dropdown-link">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html#product-concrete" class="nav__dropdown-link">透水混凝土胶结料</a></li>
+            <li><a href="products.html#product-sand" class="nav__dropdown-link">砂基专用胶粘剂</a></li>
+            <li><a href="products.html#product-coated" class="nav__dropdown-link">彩色覆膜砂</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="cases.html" class="nav__link">客户案例 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="cases.html" class="nav__dropdown-link">透水混凝土路面案例</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">新闻资讯 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="news.html#news-company" class="nav__dropdown-link">公司新闻</a></li>
+            <li><a href="news.html#news-encyclopedia" class="nav__dropdown-link">产品百科</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">联系我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="contact.html#contact-info" class="nav__dropdown-link">公司信息</a></li>
+            <li><a href="contact.html#contact-sales" class="nav__dropdown-link">区域销售经理</a></li>
+            <li><a href="contact.html#contact-qr" class="nav__dropdown-link">关注我们</a></li>
+          </ul>
+        </li>
       </ul>
       <button class="nav__toggle" aria-label="菜单">
         <i class="fas fa-bars"></i>
@@ -49,147 +86,171 @@
         </div>
         <h1 class="page-header__title">联系<em>莫特普迩</em></h1>
         <p class="page-header__desc">
-          如您对我们的产品或服务有任何疑问，欢迎通过以下方式与我们联系，我们的专业团队将为您提供详尽的解答。
+          如您对我们的产品或服务有任何疑问，欢迎通过以下方式与我们的区域销售团队直接联系。
         </p>
       </div>
     </div>
   </header>
 
-  <!-- ========== Contact Section ========== -->
-  <section class="section">
+  <section class="section" id="contact-info">
     <div class="container">
-      <div class="contact-grid">
-        <!-- Contact Form -->
-        <div class="contact-form fade-up">
-          <div class="section-label" style="margin-bottom: 1.5rem;">SEND MESSAGE</div>
-          <h2 style="margin-bottom: 0.5rem;">在线留言</h2>
-          <p style="margin-bottom: 2rem; font-size: 0.9375rem;">填写以下表单，我们将尽快与您取得联系。</p>
+      <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
+        <div class="section-label">GET IN TOUCH</div>
+        <h2 class="section-title">公司信息</h2>
+      </div>
 
-          <form id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="name">姓名 *</label>
-                <input type="text" id="name" class="form-input" placeholder="请输入您的姓名" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="phone">电话 *</label>
-                <input type="tel" id="phone" class="form-input" placeholder="请输入联系电话" required>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="email">邮箱</label>
-                <input type="email" id="email" class="form-input" placeholder="请输入电子邮箱">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="company">公司名称</label>
-                <input type="text" id="company" class="form-input" placeholder="请输入公司名称">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="subject">咨询主题</label>
-              <select id="subject" class="form-select">
-                <option value="">请选择咨询主题</option>
-                <option value="product">产品咨询</option>
-                <option value="service">工程技术服务</option>
-                <option value="cooperation">商务合作</option>
-                <option value="other">其他事项</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="message">留言内容 *</label>
-              <textarea id="message" class="form-textarea" placeholder="请输入您需要咨询的内容..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
-              <i class="fas fa-paper-plane"></i> 提交留言
-            </button>
-          </form>
+      <!-- Company Info Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;" class="fade-up">
+        <div class="contact-info__item" style="flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; padding: 2rem 1.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)';this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.borderColor='var(--color-border)';this.style.transform='';this.style.boxShadow=''">
+          <div class="contact-info__icon" style="width: 56px; height: 56px; border-radius: 50%;">
+            <i class="fas fa-location-dot"></i>
+          </div>
+          <div>
+            <div class="contact-info__label">公司地址</div>
+            <div class="contact-info__value">上海市<br><span style="font-size: 0.8125rem; color: var(--color-text-muted);">（详细地址请来电咨询）</span></div>
+          </div>
         </div>
 
-        <!-- Contact Info -->
-        <div class="contact-info fade-up">
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <i class="fas fa-location-dot"></i>
-            </div>
-            <div>
-              <div class="contact-info__label">公司地址</div>
-              <div class="contact-info__value">上海市<br>（详细地址请来电咨询）</div>
-            </div>
+        <div class="contact-info__item" style="flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; padding: 2rem 1.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)';this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.borderColor='var(--color-border)';this.style.transform='';this.style.boxShadow=''">
+          <div class="contact-info__icon" style="width: 56px; height: 56px; border-radius: 50%;">
+            <i class="fas fa-phone-volume"></i>
           </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <i class="fas fa-phone-volume"></i>
-            </div>
-            <div>
-              <div class="contact-info__label">联系电话</div>
-              <div class="contact-info__value">021-0000-0000</div>
-            </div>
+          <div>
+            <div class="contact-info__label">联系电话</div>
+            <div class="contact-info__value">021-0000-0000</div>
           </div>
+        </div>
 
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <div class="contact-info__label">电子邮箱</div>
-              <div class="contact-info__value">info@motepuer.com</div>
-            </div>
+        <div class="contact-info__item" style="flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; padding: 2rem 1.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)';this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.borderColor='var(--color-border)';this.style.transform='';this.style.boxShadow=''">
+          <div class="contact-info__icon" style="width: 56px; height: 56px; border-radius: 50%;">
+            <i class="fas fa-envelope"></i>
           </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div>
-              <div class="contact-info__label">办公时间</div>
-              <div class="contact-info__value">周一至周五<br>09:00 - 18:00</div>
-            </div>
+          <div>
+            <div class="contact-info__label">电子邮箱</div>
+            <div class="contact-info__value">info@motepuer.com</div>
           </div>
+        </div>
 
-          <!-- Quick Contact Cards -->
-          <div style="margin-top: 1rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
-            <div style="font-size: 0.8125rem; color: var(--color-text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">QUICK CONTACT</div>
-            <div style="display: flex; gap: 0.75rem;" class="contact-quick-cards">
-              <a href="tel:021-00000000" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem 0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
-                <i class="fas fa-phone" style="font-size: 1.25rem; color: var(--color-accent);"></i>
-                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">电话咨询</span>
-              </a>
-              <a href="mailto:info@motepuer.com" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem 0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
-                <i class="fas fa-envelope" style="font-size: 1.25rem; color: var(--color-accent);"></i>
-                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">邮件咨询</span>
-              </a>
-              <a href="products.html" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.25rem  0.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)'" onmouseout="this.style.borderColor='var(--color-border)'">
-                <i class="fas fa-box" style="font-size: 1.25rem; color: var(--color-accent);"></i>
-                <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-primary);">产品中心</span>
-              </a>
-            </div>
+        <div class="contact-info__item" style="flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; padding: 2rem 1.5rem; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); transition: var(--transition);" onmouseover="this.style.borderColor='var(--color-accent)';this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.borderColor='var(--color-border)';this.style.transform='';this.style.boxShadow=''">
+          <div class="contact-info__icon" style="width: 56px; height: 56px; border-radius: 50%;">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <div class="contact-info__label">办公时间</div>
+            <div class="contact-info__value">周一至周五<br><span style="font-size: 0.8125rem; color: var(--color-text-muted);">09:00 - 18:00</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Map Section ========== -->
-  <section class="section--tight section--alt">
+  <section class="section section--alt" id="contact-sales">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 3rem;" class="fade-up">
-        <div class="section-label" style="justify-content: center;">OUR LOCATION</div>
-        <h2 style="margin-bottom: 0.75rem;">我们的位置</h2>
-        <p style="max-width: 500px; margin: 0 auto;">公司位于上海，欢迎来访交流洽谈。</p>
+      <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
+        <div class="section-label">SALES TEAM</div>
+        <h2 class="section-title">各区域销售经理</h2>
+        <p class="section-desc">
+          以下为各区域销售负责人联系方式，您可根据所在地区直接联系对应的销售经理，获取更精准的服务支持。
+        </p>
       </div>
 
-      <div class="fade-up" style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md);">
-        <iframe
-          src="https://map.baidu.com/search/%E4%B8%8A%E6%B5%B7%E5%B8%82/@13523980.05,3641118.59,12z?querytype=s&da_src=shareurl&wd=%E4%B8%8A%E6%B5%B7%E5%B8%82&c=289&src=0&pn=0&sug=0&l=12&b=(13505980,3622118),(13541980,3660118)&from=webmap&prod=0&uc=0&anp=1&i=0&cc=289&cont_id=0&gwd=0&rg=0&pos=0&ln=0&rt=0&ext=0&auth=0&mrs=0&tn=B_NORMAL_MAP&re=1&nu=0&da_src=shareurl&t="
-          width="100%"
-          height="420"
-          style="border: 0; display: block;"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="公司位置地图">
-        </iframe>
+      <div class="sales-managers-wrapper fade-up">
+        <table class="sales-managers">
+          <thead>
+            <tr>
+              <th>负责区域</th>
+              <th>销售经理</th>
+              <th>联系电话</th>
+              <th>覆盖省市</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="sales-managers__region">
+                  <i class="fas fa-map-marker-alt"></i>华东区域
+                </span>
+              </td>
+              <td><span class="sales-managers__name">张经理</span></td>
+              <td><a href="tel:13800001111" class="sales-managers__phone"><i class="fas fa-phone"></i>138-0000-1111</a></td>
+              <td>上海、江苏、浙江、安徽</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="sales-managers__region">
+                  <i class="fas fa-map-marker-alt"></i>华北区域
+                </span>
+              </td>
+              <td><span class="sales-managers__name">李经理</span></td>
+              <td><a href="tel:13800002222" class="sales-managers__phone"><i class="fas fa-phone"></i>138-0000-2222</a></td>
+              <td>北京、天津、河北、山东</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="sales-managers__region">
+                  <i class="fas fa-map-marker-alt"></i>华南区域
+                </span>
+              </td>
+              <td><span class="sales-managers__name">王经理</span></td>
+              <td><a href="tel:13800003333" class="sales-managers__phone"><i class="fas fa-phone"></i>138-0000-3333</a></td>
+              <td>广东、广西、海南、福建</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="sales-managers__region">
+                  <i class="fas fa-map-marker-alt"></i>西南区域
+                </span>
+              </td>
+              <td><span class="sales-managers__name">陈经理</span></td>
+              <td><a href="tel:13800004444" class="sales-managers__phone"><i class="fas fa-phone"></i>138-0000-4444</a></td>
+              <td>四川、重庆、云南、贵州</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact-qr">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 1rem;" class="fade-up">
+        <div class="section-label">FOLLOW US</div>
+        <h2 class="section-title">关注我们</h2>
+        <p class="section-desc">
+          扫描下方二维码，关注莫特普迩官方平台，获取最新产品资讯、技术干货与行业动态。
+        </p>
+      </div>
+
+      <div class="qr-section fade-up">
+        <!-- 微信公众号 -->
+        <div class="qr-card">
+          <div class="qr-card__icon qr-card__icon--wechat">
+            <i class="fab fa-weixin"></i>
+          </div>
+          <div class="qr-card__image">
+            <img src="assets/images/qr1.jpg" alt="微信公众号二维码">
+          </div>
+          <h3 class="qr-card__title">微信公众号</h3>
+          <p class="qr-card__subtitle">
+            关注「莫特普迩」公众号<br>
+            获取产品资讯与技术干货
+          </p>
+        </div>
+
+        <!-- 微信视频号 -->
+        <div class="qr-card">
+          <div class="qr-card__icon qr-card__icon--channel">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <div class="qr-card__image">
+            <img src="assets/images/qr2.jpg" alt="微信视频号二维码">
+          </div>
+          <h3 class="qr-card__title">微信视频号</h3>
+          <p class="qr-card__subtitle">
+            关注「莫特普迩新材料」视频号<br>
+            观看产品演示与工程案例
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -211,17 +272,19 @@
           <ul class="footer__links">
             <li><a href="index.html">首页</a></li>
             <li><a href="about.html">关于我们</a></li>
-            <li><a href="products.html">产品服务</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">客户案例</a></li>
+            <li><a href="news.html">新闻资讯</a></li>
             <li><a href="contact.html">联系我们</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer__col-title">产品中心</h4>
           <ul class="footer__links">
-            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">PC砖仿石系列增强剂</a></li>
             <li><a href="products.html">透水混凝土胶结料</a></li>
-            <li><a href="products.html">砂基专用胶</a></li>
-            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">砂基专用胶粘剂</a></li>
+            <li><a href="products.html">彩色覆膜砂</a></li>
             <li><a href="products.html">工程技术服务</a></li>
           </ul>
         </div>
@@ -232,6 +295,21 @@
             <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
             <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
           </ul>
+          <!-- 微信公众号二维码 -->
+          <div class="footer__qr" style="margin-top: 1.25rem;">
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qr1.jpg" alt="微信公众号">
+              </div>
+              <span class="footer__qr-text">微信公众号<br>扫码关注</span>
+            </div>
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qrcode-channel.svg" alt="微信视频号">
+              </div>
+              <span class="footer__qr-text">微信视频号<br>扫码关注</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">

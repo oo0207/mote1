@@ -23,13 +23,50 @@
   <nav class="navbar">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="assets/images/logo.jpg" alt="莫特普迩">
+        <img src="assets/images/logo.png" alt="莫特普迩" class="logo-default">
+        <img src="assets/images/logo-white.png" alt="莫特普迩" class="logo-white">
       </a>
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link">首页</a></li>
-        <li><a href="about.html" class="nav__link">关于我们</a></li>
-        <li><a href="products.html" class="nav__link">产品服务</a></li>
-        <li><a href="contact.html" class="nav__link">联系我们</a></li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">关于我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="about.html#company-intro" class="nav__dropdown-link">企业简介</a></li>
+            <li><a href="about.html#company-culture" class="nav__dropdown-link">企业文化</a></li>
+            <li><a href="about.html#company-honors" class="nav__dropdown-link">荣誉资质</a></li>
+            <li><a href="about.html#company-rd" class="nav__dropdown-link">研发实力</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="products.html" class="nav__link">产品中心 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="products.html#product-pc" class="nav__dropdown-link">PC砖仿石系列增强剂</a></li>
+            <li><a href="products.html#product-concrete" class="nav__dropdown-link">透水混凝土胶结料</a></li>
+            <li><a href="products.html#product-sand" class="nav__dropdown-link">砂基专用胶粘剂</a></li>
+            <li><a href="products.html#product-coated" class="nav__dropdown-link">彩色覆膜砂</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="cases.html" class="nav__link">客户案例 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="cases.html" class="nav__dropdown-link">透水混凝土路面案例</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">新闻资讯 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="news.html#news-company" class="nav__dropdown-link">公司新闻</a></li>
+            <li><a href="news.html#news-encyclopedia" class="nav__dropdown-link">产品百科</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">联系我们 <i class="fas fa-chevron-down nav__arrow"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="contact.html#contact-info" class="nav__dropdown-link">公司信息</a></li>
+            <li><a href="contact.html#contact-sales" class="nav__dropdown-link">区域销售经理</a></li>
+            <li><a href="contact.html#contact-qr" class="nav__dropdown-link">关注我们</a></li>
+          </ul>
+        </li>
       </ul>
       <button class="nav__toggle" aria-label="菜单">
         <i class="fas fa-bars"></i>
@@ -178,6 +215,75 @@
     </div>
   </section>
 
+  <!-- ========== Customer Cases ========== -->
+  <section class="section" id="cases">
+    <div class="container">
+      <div style="max-width: 600px;" class="fade-up">
+        <div class="section-label">CUSTOMER CASES</div>
+        <h2 class="section-title">客户案例</h2>
+        <p class="section-desc">
+          产品已在全国多个城市的海绵城市建设项目中成功应用，以可靠品质赢得客户信赖。
+        </p>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card fade-up">
+          <div class="case-card__image">
+            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=600&q=80" alt="苏州工业园区透水混凝土路面" loading="lazy">
+            <div class="case-card__overlay">
+              <span class="case-card__location"><i class="fas fa-location-dot"></i> 苏州·工业园区</span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <span class="case-card__tag">透水混凝土胶结料</span>
+            <h3 class="case-card__title">工业园区道路透水路面改造</h3>
+            <p class="case-card__desc">为园区内市政道路透水改造项目供应透水混凝土胶结料，满足重载交通条件下的透水与强度双重要求。</p>
+            <div class="case-card__meta">
+              <span class="case-card__meta-item"><i class="fas fa-ruler-combined"></i> <strong>15,000㎡</strong></span>
+              <span class="case-card__meta-item"><i class="fas fa-calendar"></i> 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card fade-up">
+          <div class="case-card__image">
+            <img src="https://images.unsplash.com/photo-1590874103328-8b378c27f675?w=600&q=80" alt="上海浦东新区生态道路" loading="lazy">
+            <div class="case-card__overlay">
+              <span class="case-card__location"><i class="fas fa-location-dot"></i> 上海·浦东新区</span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <span class="case-card__tag">透水混凝土胶结料</span>
+            <h3 class="case-card__title">浦东新区生态道路工程</h3>
+            <p class="case-card__desc">为浦东新区海绵城市试点道路提供透水混凝土整体解决方案，实现雨水快速下渗与路面长效稳定。</p>
+            <div class="case-card__meta">
+              <span class="case-card__meta-item"><i class="fas fa-ruler-combined"></i> <strong>22,000㎡</strong></span>
+              <span class="case-card__meta-item"><i class="fas fa-calendar"></i> 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card fade-up">
+          <div class="case-card__image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="杭州钱江新城海绵道路" loading="lazy">
+            <div class="case-card__overlay">
+              <span class="case-card__location"><i class="fas fa-location-dot"></i> 杭州·钱江新城</span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <span class="case-card__tag">透水混凝土胶结料</span>
+            <h3 class="case-card__title">钱江新城海绵道路工程</h3>
+            <p class="case-card__desc">钱江新城核心区道路全面采用透水混凝土铺装，兼顾城市景观与雨水管理双重目标。</p>
+            <div class="case-card__meta">
+              <span class="case-card__meta-item"><i class="fas fa-ruler-combined"></i> <strong>18,000㎡</strong></span>
+              <span class="case-card__meta-item"><i class="fas fa-calendar"></i> 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== Advantages ========== -->
   <section class="section">
     <div class="container">
@@ -291,17 +397,19 @@
           <ul class="footer__links">
             <li><a href="index.html">首页</a></li>
             <li><a href="about.html">关于我们</a></li>
-            <li><a href="products.html">产品服务</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="cases.html">客户案例</a></li>
+            <li><a href="news.html">新闻资讯</a></li>
             <li><a href="contact.html">联系我们</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer__col-title">产品中心</h4>
           <ul class="footer__links">
-            <li><a href="products.html">PC透水砖仿石增强剂</a></li>
+            <li><a href="products.html">PC砖仿石系列增强剂</a></li>
             <li><a href="products.html">透水混凝土胶结料</a></li>
-            <li><a href="products.html">砂基专用胶</a></li>
-            <li><a href="products.html">覆膜砂</a></li>
+            <li><a href="products.html">砂基专用胶粘剂</a></li>
+            <li><a href="products.html">彩色覆膜砂</a></li>
             <li><a href="products.html">工程技术服务</a></li>
           </ul>
         </div>
@@ -309,9 +417,24 @@
           <h4 class="footer__col-title">联系方式</h4>
           <ul class="footer__links">
             <li><a href="contact.html"><i class="fas fa-location-dot"></i> 上海市</a></li>
-            <li><a href="tel:021-00000000"><i class="fas fa-phone"></i> 021-0000-0000</a></li>
+            <li><a href="Tel:400-1799-369"><i class="fas fa-phone"></i> 400-1799-369</a></li>
             <li><a href="mailto:info@motepuer.com"><i class="fas fa-envelope"></i> info@motepuer.com</a></li>
           </ul>
+          <!-- 微信公众号二维码 -->
+          <div class="footer__qr" style="margin-top: 1.25rem;">
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qr1.jpg" alt="微信公众号">
+              </div>
+              <span class="footer__qr-text">微信公众号<br>扫码关注</span>
+            </div>
+            <div class="footer__qr-item">
+              <div class="footer__qr-image">
+                <img src="assets/images/qr2.jpg" alt="微信视频号">
+              </div>
+              <span class="footer__qr-text">微信视频号<br>扫码关注</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">
